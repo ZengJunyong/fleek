@@ -2,3 +2,15 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+// Import the fonts
+@each $font in BrandonText-Black, BrandonText-Bold, BrandonText-Light, BrandonText-Medium {
+  @font-face {
+    font-family: $font;
+    src: url('../fonts/HVD%20Fonts%20-%20#{$font}.otf') format("opentype");
+  }
+}
+
+h2 {
+  font-family: BrandonText-Black;
+}
