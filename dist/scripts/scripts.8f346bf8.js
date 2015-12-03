@@ -1,0 +1,1 @@
+(function(){"use strict";angular.module("fleekApp",[])}).call(this),function(){"use strict";angular.module("fleekApp").controller("MainCtrl",function(){})}.call(this);
