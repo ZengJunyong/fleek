@@ -4,7 +4,7 @@ $color: #ada054;
 @each $font in BrandonText-Black, BrandonText-Bold, BrandonText-Light, BrandonText-Medium {
   @font-face {
     font-family: $font;
-    src: url('../fonts/HVD%20Fonts%20-%20#{$font}.otf') format("opentype");
+    src: url('./fonts/HVD%20Fonts%20-%20#{$font}.otf') format("opentype");
   }
 }
 
