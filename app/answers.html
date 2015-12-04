@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Fleek</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+</head>
+<body ng-app="surveyApp" ng-controller="AnswersController">
+<!--[if lte IE 8]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+
+<div class="container">
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Answers(From questions 2 to 9)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="a in answers">
+      <td>{{a.name}}</td>
+      <td>{{a.email}}</td>
+      <td>
+        <span ng-repeat="x in a.answers track by $index">
+          Q{{$index + 2}} : {{x}} <br/>
+        </span>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/survey.js"></script>
+<!-- endbuild -->
+</body>
+</html>

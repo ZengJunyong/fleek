@@ -25,7 +25,7 @@
       this['q' + x] = temp;
     }
     this.submit = function() {
-      var answers, email, k, name, ref1;
+      var answers, email, k, name, ref1, that;
       this.clicked = 1;
       if ($scope.form.$valid) {
         ref1 = this.survey, name = ref1.name, email = ref1.email;
@@ -37,6 +37,7 @@
         if (this.survey.q9Selected) {
           answers.push(this.survey.q9Selected.index);
         }
+        that = this;
         return $http({
           method: 'POST',
           url: 'http://letsgaigai.com:9000/answers',
@@ -46,10 +47,14 @@
             answers: answers
           }
         }).success(function(v) {
-          return console.log(v);
+          return that.saved = 1;
         });
       }
     };
+  }).controller('AnswersController', function($http, $scope) {
+    return $http.get('http://letsgaigai.com:9000/answers').success(function(v) {
+      return $scope.answers = v;
+    });
   });
 
 }).call(this);

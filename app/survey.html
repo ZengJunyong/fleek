@@ -34,7 +34,7 @@
   </div>
 </div>
 
-<div class="container thanks">
+<div class="container thanks ng-hide" data-ng-show="ctrl.saved">
   <div class="row">
     <div class="col-md-7"></div>
     <div class="col-md-5">
@@ -55,7 +55,7 @@
 </div>
 
 
-<div class="container survey">
+<div class="container survey" data-ng-show="!ctrl.saved">
   <h2>Start now!</h2>
 
   <div class="row">

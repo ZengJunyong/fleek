@@ -77,11 +77,16 @@ angular.module('surveyApp', [])
         {index} = @survey['q' + x + 'Selected']
         answers.push index
       answers.push @survey.q9Selected.index if @survey.q9Selected
+      that = @
       $http({
         method: 'POST'
         url: 'http://letsgaigai.com:9000/answers'
         params: {name, email, answers}
       }).success (v) ->
-        console.log v
+        that.saved = 1
   return
+)
+.controller('AnswersController', ($http, $scope)->
+  $http.get('http://letsgaigai.com:9000/answers').success (v)->
+    $scope.answers = v
 )
