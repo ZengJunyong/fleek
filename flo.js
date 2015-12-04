@@ -1,3 +1,4 @@
+//https://www.youtube.com/watch?v=ltdtm6_Mjjc
 var flo = require('fb-flo'),
   fs = require('fs'),
   path = require('path'),
@@ -5,7 +6,7 @@ var flo = require('fb-flo'),
 
 var server = flo('./app/', {
   port: 8888,
-  glob: ['**/*.js', '**/*.css']
+  glob: ['**/*.js', '**/*.css', '**/*.html']
 }, resolver);
 
 server.once('ready', function () {
@@ -13,8 +14,10 @@ server.once('ready', function () {
 });
 
 function resolver(filepath, callback) {
+  console.log(filepath, 'is changed at', new Date());
   callback({
     resourceURL: 'app/' + filepath,
-    contents: fs.readFileSync('app/' + filepath)
+    contents: fs.readFileSync('app/' + filepath),
+    reload: filepath.indexOf('.js') > -1 || filepath.indexOf('.html') > -1
   });
 }
