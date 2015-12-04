@@ -130,6 +130,20 @@ a.button {
     .follow-us .images img {
       margin-right: 60px; }
 
+.survey {
+  border-top: 15px solid #ada054; }
+  .survey h2 {
+    margin: 40px 0 10px 0; }
+  .survey .submit {
+    padding: 40px 0 60px 0; }
+  .survey .form-group {
+    margin-top: 30px; }
+  .survey label {
+    margin-bottom: 15px; }
+  .survey .error {
+    color: red;
+    display: block; }
+
 .footer {
   background: black;
   padding: 60px 0 50px 0;

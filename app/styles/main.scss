@@ -167,6 +167,28 @@ a.button {
   }
 }
 
+.survey {
+  border-top: 15px solid $color;
+  h2 {
+    margin: 40px 0 10px 0;
+  }
+  form {
+  }
+  .submit {
+    padding: 40px 0 60px 0;
+  }
+  .form-group{
+    margin-top: 30px;
+  }
+  label{
+    margin-bottom: 15px;
+  }
+  .error{
+    color: red;
+    display: block;
+  }
+}
+
 .footer {
   background: black;
   padding: 60px 0 50px 0;
@@ -183,7 +205,7 @@ a.button {
     .middle {
       margin: 0 60px 0 60px;
     }
-    img{
+    img {
       width: 50px;
     }
   }

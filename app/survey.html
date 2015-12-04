@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Fleek</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+</head>
+<body ng-app="fleekApp">
+<!--[if lte IE 8]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+
+<div class="container big-bg">
+  <img src="images/08.png" class="logo" alt=""/>
+
+  <div class="text">
+    Your personality is often a strong indicator of what type of style suits you best.Defining your style type gives
+    you a start to begin!
+    So let’s uncover and know yourself better to determine what is appropriate for your personal style.
+  </div>
+</div>
+
+
+<div class="container survey">
+  <h2>Start now!</h2>
+
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <form>
+        <div class="form-group">
+          <label class="error"><span class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
+          <label>* 1. Let us know how we can contact you :</label>
+          <div class="row" style="margin-bottom: 15px;">
+            <div class="col-md-1">Name</div>
+            <div class="col-md-11"><input type="text" class="form-control"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-1">Email</div>
+            <div class="col-md-11"><input type="email" class="form-control"></div>
+          </div>
+
+        </div>
+        <div class="form-group">
+          <label class="error"><span class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
+          <label>* 2. Describe yourself in one word..</label>
+          <select class="form-control">
+            <option>Misunderstood</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="error"><span class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
+          <label>* 3. When you look in a mirror, you..</label>
+          <select class="form-control">
+            <option>Aren’t happy with what you see</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="error"><span class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
+          <label>* 4. What do you want to improve/change?</label>
+          <select class="form-control">
+            <option>Misunderstood</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="error"><span class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
+          <label>* 5. How would your friends describe you?</label>
+          <select class="form-control">
+            <option>Misunderstood</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="error"><span class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
+          <label>* 6. When you walk into a crowded room, what would you prefer to do?</label>
+          <select class="form-control">
+            <option>Misunderstood</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="error"><span class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
+          <label>* 7. Do you wear men’s fashion or women’s fashion?</label>
+          <select class="form-control">
+            <option>Misunderstood</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="error"><span class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
+          <label>* 8. If we opened your closet, what color palette would we mostly see?</label>
+          <select class="form-control">
+            <option>Misunderstood</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>9. If someone gave you $500 for clothes, how would you use it?</label>
+          <select class="form-control">
+            <option>Misunderstood</option>
+          </select>
+        </div>
+
+        <div class="text-center submit">
+          <a class="button" href="#"> Submit</a>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+
+<div class="container footer text-center">
+  <div class="links">
+    <a href="#">Home</a> |
+    <a href="#">Services</a> |
+    <a href="#">About Us </a> |
+    <a href="#">Contact Us </a>
+  </div>
+  <div class="images">
+    <img src="images/05.png" alt=""/>
+    <img src="images/06.png" class="middle" alt=""/>
+    <img src="images/07.png" alt=""/>
+  </div>
+  <p>
+    Copywright @ Fleek Image.
+    All rights reserved.
+  </p>
+</div>
+
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>
