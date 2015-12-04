@@ -1,5 +1,5 @@
 angular.module('surveyApp', [])
-.controller('SurveyController', ($scope)->
+.controller('SurveyController', ($scope, $http)->
   @q2 = [
     'Funny'
     'Misunderstood'
@@ -77,6 +77,11 @@ angular.module('surveyApp', [])
         {index} = @survey['q' + x + 'Selected']
         answers.push index
       answers.push @survey.q9Selected.index if @survey.q9Selected
-      console.log 'uploading', {name, email, answers}
+      $http({
+        method: 'POST'
+        url: 'http://letsgaigai.com:9000/answers'
+        params: {name, email, answers}
+      }).success (v) ->
+        console.log v
   return
 )

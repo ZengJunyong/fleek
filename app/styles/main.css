@@ -53,6 +53,20 @@ h3 {
     padding: 35px;
     background: rgba(0, 0, 0, 0.7); }
 
+.thanks {
+  background: url("../images/12.png") no-repeat center;
+  background-size: cover;
+  text-align: left;
+  padding-bottom: 40px; }
+  .thanks h2 {
+    text-align: left;
+    font-size: 36px; }
+  .thanks .logo {
+    margin: 50px 0 40px 0px;
+    width: 300px; }
+  .thanks .team {
+    font-family: BrandonText-Black; }
+
 .how-it-work h2 {
   margin-top: 60px; }
 .how-it-work .line {
