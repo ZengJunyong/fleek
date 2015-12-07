@@ -8,7 +8,7 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
@@ -23,15 +23,8 @@
 <![endif]-->
 
 <!-- Add your site or application content here -->
+<ng-include src="'header.html'"></ng-include>
 
-<div class="container big-bg">
-  <img src="images/08.png" class="logo" alt=""/>
-
-  <div class="text">
-    Fleek Image is an image consultant agency. We’re part of GaiGai an offline bespoke matchmaking agency who is wholly
-    owned by Paktor. We’re committed to help individuals to create the best first impression
-  </div>
-</div>
 <div class="container how-it-work">
   <h2>How it works</h2>
 
@@ -161,24 +154,7 @@
   <a class="button" href="#">Follow us</a>
 </div>
 
-<div class="container footer text-center">
-  <div class="links">
-    <a href="#">Home</a> |
-    <a href="#">Services</a> |
-    <a href="#">About Us </a> |
-    <a href="#">Contact Us </a>
-  </div>
-  <div class="images">
-    <a href="https://www.facebook.com/OnFleekImage/"><img src="images/05.png" alt=""/></a>
-    <a href="https://www.instagram.com/fleekimage/"><img src="images/06.png" class="middle" alt=""/></a>
-    <a href="https://fleekimage.myshopify.com/pages/contact-us"><img src="images/07.png" alt=""/></a>
-  </div>
-  <p>
-    Copywright @ Fleek Image.
-    All rights reserved.
-  </p>
-</div>
-
+<ng-include src="'footer.html'"></ng-include>
 
 <!-- build:js(.) scripts/vendor.js -->
 <!-- bower:js -->
