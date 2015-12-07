@@ -37,7 +37,7 @@ h3 {
 
 .big-bg {
   background: url("../images/09.png") no-repeat center;
-  height: 493px;
+  height: 650px;
   background-size: cover;
   position: relative; }
   .big-bg .logo {
@@ -51,7 +51,8 @@ h3 {
     font-size: 20px;
     text-align: center;
     padding: 35px;
-    background: rgba(0, 0, 0, 0.7); }
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%; }
 
 .thanks {
   background: url("../images/12.png") no-repeat center;
