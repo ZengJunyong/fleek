@@ -42,12 +42,15 @@ h3 {
 .big-bg {
   position: relative;
   padding: 0;
-
   .logo {
     position: absolute;
-    top: 40px;
-    left: 40px;
-    width: 300px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    img {
+      width: 300px;
+      margin: 40px 0 0 40px;
+    }
   }
 
   .text {
@@ -60,6 +63,32 @@ h3 {
     padding: 35px;
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
+  }
+}
+
+.visible-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 760px) {
+  .big-bg {
+    .logo {
+      text-align: center;
+      img {
+        width: 200px;
+        margin: 40px 0 0 0;
+      }
+    }
+    .text {
+      font-size: 15px;
+      padding: 15px;
+    }
+  }
+  .visible-pc {
+    display: none;
+  }
+  .visible-mobile {
+    display: inherit;
   }
 }
 
@@ -222,7 +251,7 @@ a.button {
     a {
       color: $color;
     }
-    span{
+    span {
       padding: 0 50px;
     }
   }
