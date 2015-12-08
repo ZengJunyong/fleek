@@ -112,6 +112,19 @@ h3 {
 .how-it-work .get-started {
   margin: 89px 0 83px; }
 
+@media screen and (max-width: 991px) {
+  h2 {
+    font-size: 35px; }
+
+  body {
+    font-size: 16px; }
+
+  .how-it-work .round {
+    margin-top: 40px; }
+  .how-it-work .points {
+    margin-top: 0px; }
+  .how-it-work .line {
+    margin-bottom: 0px; } }
 a.button {
   font-size: 30px;
   color: white;

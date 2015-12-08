@@ -144,6 +144,26 @@ h3 {
   }
 }
 
+@media screen and (max-width: 991px) {
+  h2 {
+    font-size: 35px;
+  }
+  body {
+    font-size: 16px;
+  }
+  .how-it-work {
+    .round {
+      margin-top: 40px;
+    }
+    .points {
+      margin-top: 0px;
+    }
+    .line {
+      margin-bottom: 0px;
+    }
+  }
+}
+
 a.button {
   font-size: 30px;
   color: white;
