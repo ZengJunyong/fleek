@@ -163,13 +163,15 @@ a.button {
 
 .footer {
   background: black;
-  padding: 60px 0 50px 0;
+  padding-top: 60px;
+  padding-bottom: 50px;
   color: white; }
   .footer .links {
     color: #ada054; }
     .footer .links a {
-      color: #ada054;
-      margin: 0 50px 0 50px; }
+      color: #ada054; }
+    .footer .links span {
+      padding: 0 50px; }
   .footer .images {
     padding: 40px 0 30px 0; }
     .footer .images .middle {
