@@ -195,6 +195,9 @@ a.button {
     .follow-us .images img {
       margin: 30px; }
 
+@media screen and (max-width: 991px) {
+  .follow-us .line {
+    margin-bottom: 20px; } }
 .survey {
   border-top: 15px solid #ada054; }
   .survey h2 {

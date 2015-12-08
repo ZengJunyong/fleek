@@ -200,7 +200,7 @@ a.button {
     .line {
       margin-bottom: 0;
     }
-    .img-circle{
+    .img-circle {
       margin-top: 55px;
     }
   }
@@ -258,6 +258,12 @@ a.button {
     img {
       margin: 30px;
     }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .follow-us .line {
+    margin-bottom: 20px;
   }
 }
 
