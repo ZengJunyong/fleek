@@ -170,6 +170,12 @@ a.button {
   padding-bottom: 70px;
   background-image: url("../images/10.png"); }
 
+@media screen and (max-width: 991px) {
+  .private {
+    padding-top: 10px; }
+
+  .private, .workshops {
+    border-bottom: 8px solid #ada054; } }
 .workshops {
   padding-top: 60px;
   padding-bottom: 60px;
