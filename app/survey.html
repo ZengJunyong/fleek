@@ -24,9 +24,10 @@
 
 <!-- Add your site or application content here -->
 
-<div class="container-fluid big-bg">
+<div class="container-fluid big-bg" data-ng-hide="ctrl.saved">
   <img src="images/09.png" class="visible-pc" style="width: 100%;"/>
   <img src="images/19.png" class="visible-mobile" style="width: 100%;"/>
+
   <div class="logo">
     <img src="images/08.png" alt=""/>
   </div>
@@ -45,11 +46,13 @@
 
 <div class="container-fluid thanks ng-hide" data-ng-show="ctrl.saved">
   <div class="row">
-    <div class="col-md-7"></div>
-    <div class="col-md-5">
+    <div class="col-sm-7"></div>
+    <div class="col-sm-5">
       <img src="images/08.png" class="logo" alt=""/>
+
       <h2>Thank you
         for your submission!</h2>
+
       <p>
         <br/>You’re one step away from a brand new you!
         <br/>
@@ -72,64 +75,83 @@
     <div class="col-md-8">
       <form name="form">
         <div class="form-group">
-          <label data-ng-show="ctrl.clicked&&(form.name.$invalid||form.email.$invalid)" class="error ng-hide"><span class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
+          <label data-ng-show="ctrl.clicked&&(form.name.$invalid||form.email.$invalid)" class="error ng-hide"><span
+            class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
           <label>* 1. Let us know how we can contact you :</label>
+
           <div class="row" style="margin-bottom: 15px;">
             <div class="col-md-1">Name</div>
-            <div class="col-md-11"><input type="text" required ng-model="ctrl.survey.name" name="name" class="form-control"></div>
+            <div class="col-md-11"><input type="text" required ng-model="ctrl.survey.name" name="name"
+                                          class="form-control"></div>
           </div>
 
           <div class="row">
             <div class="col-md-1">Email</div>
-            <div class="col-md-11"><input type="email" required ng-model="ctrl.survey.email" name="email" class="form-control"></div>
+            <div class="col-md-11"><input type="email" required ng-model="ctrl.survey.email" name="email"
+                                          class="form-control"></div>
           </div>
 
         </div>
         <div class="form-group">
-          <label data-ng-show="ctrl.clicked&&form.q2.$invalid" class="error ng-hide"><span class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
+          <label data-ng-show="ctrl.clicked&&form.q2.$invalid" class="error ng-hide"><span
+            class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
           <label>* 2. Describe yourself in one word..</label>
-          <select class="form-control" data-ng-model="ctrl.survey.q2Selected" name="q2" required ng-options="h.value for h in ctrl.q2"></select>
+          <select class="form-control" data-ng-model="ctrl.survey.q2Selected" name="q2" required
+                  ng-options="h.value for h in ctrl.q2"></select>
         </div>
 
         <div class="form-group">
-          <label data-ng-show="ctrl.clicked&&form.q3.$invalid" class="error ng-hide"><span class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
+          <label data-ng-show="ctrl.clicked&&form.q3.$invalid" class="error ng-hide"><span
+            class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
           <label>* 3. When you look in a mirror, you..</label>
-          <select class="form-control" data-ng-model="ctrl.survey.q3Selected" name="q3" required ng-options="h.value for h in ctrl.q3"></select>
+          <select class="form-control" data-ng-model="ctrl.survey.q3Selected" name="q3" required
+                  ng-options="h.value for h in ctrl.q3"></select>
         </div>
 
         <div class="form-group">
-          <label data-ng-show="ctrl.clicked&&form.q4.$invalid" class="error ng-hide"><span class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
+          <label data-ng-show="ctrl.clicked&&form.q4.$invalid" class="error ng-hide"><span
+            class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
           <label>* 4. What do you want to improve/change?</label>
-          <select class="form-control" data-ng-model="ctrl.survey.q4Selected" name="q4" required ng-options="h.value for h in ctrl.q4"></select>
+          <select class="form-control" data-ng-model="ctrl.survey.q4Selected" name="q4" required
+                  ng-options="h.value for h in ctrl.q4"></select>
         </div>
 
         <div class="form-group">
-          <label data-ng-show="ctrl.clicked&&form.q5.$invalid" class="error ng-hide"><span class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
+          <label data-ng-show="ctrl.clicked&&form.q5.$invalid" class="error ng-hide"><span
+            class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
           <label>* 5. How would your friends describe you?</label>
-          <select class="form-control" data-ng-model="ctrl.survey.q5Selected" name="q5" required ng-options="h.value for h in ctrl.q5"></select>
+          <select class="form-control" data-ng-model="ctrl.survey.q5Selected" name="q5" required
+                  ng-options="h.value for h in ctrl.q5"></select>
         </div>
 
         <div class="form-group">
-          <label data-ng-show="ctrl.clicked&&form.q6.$invalid" class="error ng-hide"><span class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
+          <label data-ng-show="ctrl.clicked&&form.q6.$invalid" class="error ng-hide"><span
+            class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
           <label>* 6. When you walk into a crowded room, what would you prefer to do?</label>
-          <select class="form-control" data-ng-model="ctrl.survey.q6Selected" name="q6" required ng-options="h.value for h in ctrl.q6"></select>
+          <select class="form-control" data-ng-model="ctrl.survey.q6Selected" name="q6" required
+                  ng-options="h.value for h in ctrl.q6"></select>
         </div>
 
         <div class="form-group">
-          <label data-ng-show="ctrl.clicked&&form.q7.$invalid" class="error ng-hide"><span class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
+          <label data-ng-show="ctrl.clicked&&form.q7.$invalid" class="error ng-hide"><span
+            class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
           <label>* 7. Do you wear men’s fashion or women’s fashion?</label>
-          <select class="form-control" data-ng-model="ctrl.survey.q7Selected" name="q7" required ng-options="h.value for h in ctrl.q7"></select>
+          <select class="form-control" data-ng-model="ctrl.survey.q7Selected" name="q7" required
+                  ng-options="h.value for h in ctrl.q7"></select>
         </div>
 
         <div class="form-group">
-          <label data-ng-show="ctrl.clicked&&form.q8.$invalid" class="error ng-hide"><span class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
+          <label data-ng-show="ctrl.clicked&&form.q8.$invalid" class="error ng-hide"><span
+            class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
           <label>* 8. If we opened your closet, what color palette would we mostly see?</label>
-          <select class="form-control" data-ng-model="ctrl.survey.q8Selected" name="q8" required ng-options="h.value for h in ctrl.q8"></select>
+          <select class="form-control" data-ng-model="ctrl.survey.q8Selected" name="q8" required
+                  ng-options="h.value for h in ctrl.q8"></select>
         </div>
 
         <div class="form-group">
           <label>9. If someone gave you $500 for clothes, how would you use it?</label>
-          <select class="form-control" data-ng-model="ctrl.survey.q9Selected" name="q9" ng-options="h.value for h in ctrl.q9"></select>
+          <select class="form-control" data-ng-model="ctrl.survey.q9Selected" name="q9"
+                  ng-options="h.value for h in ctrl.q9"></select>
         </div>
 
         <div class="text-center submit">

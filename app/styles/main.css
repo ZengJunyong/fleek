@@ -85,10 +85,13 @@ h3 {
     font-size: 36px; }
   .thanks .logo {
     margin: 50px 0 40px 0px;
-    width: 300px; }
+    width: 290px; }
   .thanks .team {
     font-family: BrandonText-Black; }
 
+@media screen and (max-width: 767px) {
+  .thanks {
+    background: none; } }
 .how-it-work h2 {
   margin-top: 60px; }
 .how-it-work .line {
