@@ -1,4 +1,6 @@
 $color: #ada054;
+$line-height-pc: 15px;
+$line-height-mobile: 8px;
 
 // Import the fonts
 @each $font in BrandonText-Black, BrandonText-Bold, BrandonText-Light, BrandonText-Medium {
@@ -173,8 +175,8 @@ a.button {
 
 .consultants {
   background: black;
-  border-top: 15px solid $color;
-  border-bottom: 15px solid $color;
+  border-top: $line-height-pc solid $color;
+  border-bottom: $line-height-pc solid $color;
   padding-bottom: 70px;
 
   .line {
@@ -195,8 +197,8 @@ a.button {
 
 @media screen and (max-width: 991px) {
   .consultants {
-    border-top: 8px solid $color;
-    border-bottom: 8px solid $color;
+    border-top: $line-height-mobile solid $color;
+    border-bottom: $line-height-mobile solid $color;
     .line {
       margin-bottom: 0;
     }
@@ -210,7 +212,7 @@ a.button {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-bottom: 15px solid $color;
+  border-bottom: $line-height-pc solid $color;
 
   .line {
     margin-bottom: 43px;
@@ -231,7 +233,7 @@ a.button {
     padding-top: 10px;
   }
   .private, .workshops {
-    border-bottom: 8px solid $color;
+    border-bottom: $line-height-mobile solid $color;
   }
 }
 
@@ -268,7 +270,7 @@ a.button {
 }
 
 .survey {
-  border-top: 15px solid $color;
+  border-top: $line-height-pc solid $color;
   h2 {
     margin: 40px 0 10px 0;
   }
@@ -286,6 +288,12 @@ a.button {
   .error {
     color: red;
     display: block;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .survey {
+    border-top: $line-height-mobile solid $color;
   }
 }
 

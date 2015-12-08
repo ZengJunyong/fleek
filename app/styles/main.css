@@ -212,6 +212,9 @@ a.button {
     color: red;
     display: block; }
 
+@media screen and (max-width: 991px) {
+  .survey {
+    border-top: 8px solid #ada054; } }
 .footer {
   background: black;
   padding-top: 60px;
