@@ -193,6 +193,19 @@ a.button {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .consultants {
+    border-top: 8px solid $color;
+    border-bottom: 8px solid $color;
+    .line {
+      margin-bottom: 0;
+    }
+    .img-circle{
+      margin-top: 55px;
+    }
+  }
+}
+
 .private, .workshops {
   background-size: cover;
   background-repeat: no-repeat;
