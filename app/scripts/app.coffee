@@ -1,4 +1,6 @@
 'use strict'
 
 angular
-  .module 'fleekApp', []
+.module('fleekApp', []).run(($rootScope)->
+  $rootScope.root = {}
+)
