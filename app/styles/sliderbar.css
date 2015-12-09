@@ -61,7 +61,7 @@ body,
   right: 0;
   z-index: 100;
   visibility: hidden;
-  width: 300px;
+  width: 250px;
   height: 100%;
   background: black;
   transition: all 0.5s;
@@ -131,7 +131,7 @@ body,
 
 /* Effect 2: Reveal */
 .st-effect-2.st-menu-open .st-pusher {
-  transform: translate3d(-300px, 0, 0);
+  transform: translate3d(-250px, 0, 0);
 }
 
 .st-effect-2.st-menu {
@@ -150,5 +150,5 @@ body,
 /* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
 .no-csstransforms3d .st-pusher,
 .no-js .st-pusher {
-  padding-left: 300px;
+  padding-right: 250px;
 }
