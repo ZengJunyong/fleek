@@ -56,14 +56,14 @@ h3 {
     padding: 35px;
     background: rgba(0, 0, 0, 0.7);
     width: 100%; }
-  .big-bg button {
-    position: absolute;
-    background: black;
-    right: 0px;
-    z-index: 1; }
-  .big-bg button span, .big-bg .glyphicon {
-    color: white; }
-  .big-bg .navbar-toggle .icon-bar {
+
+#st-trigger-effects .collapsed {
+  position: absolute;
+  background: none;
+  right: 0px;
+  z-index: 1; }
+  #st-trigger-effects .collapsed span {
+    color: black;
     border: 1px solid; }
 
 @media (min-width: 768px) {

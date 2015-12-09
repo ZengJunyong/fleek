@@ -66,20 +66,18 @@ h3 {
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
   }
+}
 
-  button {
+#st-trigger-effects {
+  .collapsed {
     position: absolute;
-    background: black;
+    background: none;
     right: 0px;
     z-index: 1;
-  }
-
-  button span,.glyphicon{
-    color: white;
-  }
-
-  .navbar-toggle .icon-bar {
-    border: 1px solid;
+    span {
+      color: black;
+      border: 1px solid;
+    }
   }
 }
 
