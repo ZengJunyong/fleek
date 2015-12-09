@@ -58,7 +58,7 @@ body,
 .st-menu {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 100;
   visibility: hidden;
   width: 300px;
@@ -131,7 +131,7 @@ body,
 
 /* Effect 2: Reveal */
 .st-effect-2.st-menu-open .st-pusher {
-  transform: translate3d(300px, 0, 0);
+  transform: translate3d(-300px, 0, 0);
 }
 
 .st-effect-2.st-menu {

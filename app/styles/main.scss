@@ -69,10 +69,15 @@ h3 {
 
   button {
     position: absolute;
-    background: white;
-    left: 12px;
+    background: black;
+    right: 0px;
     z-index: 1;
   }
+
+  button span,.glyphicon{
+    color: white;
+  }
+
   .navbar-toggle .icon-bar {
     border: 1px solid;
   }

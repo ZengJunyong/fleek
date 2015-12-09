@@ -58,9 +58,11 @@ h3 {
     width: 100%; }
   .big-bg button {
     position: absolute;
-    background: white;
-    left: 12px;
+    background: black;
+    right: 0px;
     z-index: 1; }
+  .big-bg button span, .big-bg .glyphicon {
+    color: white; }
   .big-bg .navbar-toggle .icon-bar {
     border: 1px solid; }
 
