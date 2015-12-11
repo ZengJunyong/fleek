@@ -1,3 +1,5 @@
+'use strict'
+
 angular.module('surveyApp', [])
 .controller('SurveyController', ($scope, $http)->
   @q2 = [
@@ -82,7 +84,7 @@ angular.module('surveyApp', [])
         method: 'POST'
         url: 'http://letsgaigai.com:9000/answers'
         params: {name, email, answers}
-      }).success (v) ->
+      }).success ->
         that.saved = 1
   return
 )
