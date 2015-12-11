@@ -10,6 +10,14 @@ $line-height-mobile: 8px;
   }
 }
 
+@font-face {
+  font-family: 'Single Product Webicons Regular';
+  src: url("//cdn.shopify.com/s/files/1/1039/4154/t/11/assets/singleproductwebicons-regular.eot?12102901345360845545");
+  src: url("//cdn.shopify.com/s/files/1/1039/4154/t/11/assets/singleproductwebicons-regular.eot?%23iefix&12102901345360845545") format("embedded-opentype"), url("//cdn.shopify.com/s/files/1/1039/4154/t/11/assets/singleproductwebicons-regular.woff?12102901345360845545") format("woff"), url("//cdn.shopify.com/s/files/1/1039/4154/t/11/assets/singleproductwebicons-regular.ttf?12102901345360845545") format("truetype"), url("//cdn.shopify.com/s/files/1/1039/4154/t/11/assets/singleproductwebicons-regular.svg%23singleproduct_web_iconsregular?12102901345360845545") format("svg");
+  font-weight: normal;
+  font-style: normal
+}
+
 body {
   font-family: BrandonText-Medium;
   font-size: 16px;
@@ -324,6 +332,30 @@ a.button {
   padding-top: 60px;
   padding-bottom: 50px;
   color: white;
+  .icon {
+    font-family: 'Single Product Webicons Regular';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 16px;
+    color: white;
+  }
+  .icon-facebook:before {
+    content: "\E202"
+  }
+  .icon-tweet:before {
+    content: '\E201'
+  }
+  .icon-pin:before {
+    content: '\E203'
+  }
+  .icon-plus:before {
+    content: '\E205'
+  }
+  .icon-fancy:before {
+    content: '\E206'
+  }
   .links {
     color: $color;
     a {
