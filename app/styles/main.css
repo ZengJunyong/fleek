@@ -61,7 +61,7 @@ h3 {
   position: absolute;
   background: none;
   right: 0px;
-  z-index: 1; }
+  z-index: 1000; }
   #st-trigger-effects .collapsed span {
     color: black;
     border: 1px solid; }
