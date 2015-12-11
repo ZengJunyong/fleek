@@ -12,7 +12,7 @@ $line-height-mobile: 8px;
 
 body {
   font-family: BrandonText-Medium;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 h2, h3 {
@@ -174,9 +174,6 @@ h3 {
 @media screen and (max-width: 991px) {
   h2 {
     font-size: 35px;
-  }
-  body {
-    font-size: 16px;
   }
   .how-it-work {
     .round {
