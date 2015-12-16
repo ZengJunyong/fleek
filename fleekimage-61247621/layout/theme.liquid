@@ -27,9 +27,6 @@
   {{ content_for_header }}
   <!--content_for_header end-->
 
-  <link rel="stylesheet" media="screen" href="http://fleekimage.com/fleek/app/bower_components/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" media="screen" href="http://fleekimage.com/fleek/app/styles/main.css" />
-
   {% include 'social-meta' %}
 
   <!-- Theme CSS -->
@@ -75,6 +72,8 @@
     {% endif %}
   </style>
 
+  <link rel="stylesheet" media="screen" href="http://fleekimage.com/fleek/app/bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" media="screen" href="http://fleekimage.com/fleek/app/styles/main.css" />
 </head>
 
 <body class="{% if customer %}customer-logged-in{% endif %} template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} navigation-{{ settings.header-navigation-location }} {% if template == 'product.slideshow' %}template-product-slideshow{% endif %}" >
