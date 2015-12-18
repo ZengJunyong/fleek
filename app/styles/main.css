@@ -111,6 +111,11 @@ h3 {
 @media screen and (max-width: 767px) {
   .thanks {
     background: none; } }
+.introduce_more {
+  background: black;
+  color: white;
+  padding: 40px; }
+
 .how-it-work h2 {
   margin-top: 60px; }
 .how-it-work .line {
