@@ -26,10 +26,10 @@
       this['q' + x] = temp;
     }
     this.submit = function() {
-      var answers, email, k, name, ref1, that;
+      var answers, email, k, mobile, name, ref1, that;
       this.clicked = 1;
       if ($scope.form.$valid) {
-        ref1 = this.survey, name = ref1.name, email = ref1.email;
+        ref1 = this.survey, name = ref1.name, mobile = ref1.mobile, email = ref1.email;
         answers = [];
         for (x = k = 2; k <= 8; x = ++k) {
           index = this.survey['q' + x + 'Selected'].index;
@@ -44,6 +44,7 @@
           url: 'http://letsgaigai.com:9000/answers',
           params: {
             name: name,
+            mobile: mobile,
             email: email,
             answers: answers
           }

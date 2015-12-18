@@ -97,13 +97,19 @@
                 <div class="col-md-8">
                   <form name="form">
                     <div class="form-group">
-                      <label data-ng-show="ctrl.clicked&&(form.name.$invalid||form.email.$invalid)" class="error ng-hide"><span
+                      <label data-ng-show="ctrl.clicked&&(form.name.$invalid||form.email.$invalid||form.mobile.$invalid)" class="error ng-hide"><span
                         class="glyphicon glyphicon-remove-circle"></span> This question requires an answer.</label>
                       <label>* 1. Let us know how we can contact you :</label>
 
                       <div class="row" style="margin-bottom: 15px;">
                         <div class="col-md-1">Name</div>
                         <div class="col-md-11"><input type="text" required ng-model="ctrl.survey.name" name="name"
+                                                      class="form-control"></div>
+                      </div>
+
+                      <div class="row" style="margin-bottom: 15px;">
+                        <div class="col-md-1">Mobile</div>
+                        <div class="col-md-11"><input type="text" required ng-model="ctrl.survey.mobile" name="mobile"
                                                       class="form-control"></div>
                       </div>
 

@@ -73,7 +73,7 @@ angular.module('surveyApp', [])
   @submit = ->
     @clicked = 1
     if $scope.form.$valid
-      {name,email} = @survey
+      {name,mobile,email} = @survey
       answers = []
       for x in [2..8]
         {index} = @survey['q' + x + 'Selected']
@@ -83,7 +83,7 @@ angular.module('surveyApp', [])
       $http({
         method: 'POST'
         url: 'http://letsgaigai.com:9000/answers'
-        params: {name, email, answers}
+        params: {name, mobile, email, answers}
       }).success ->
         that.saved = 1
   return
