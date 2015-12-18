@@ -278,4 +278,7 @@ a._button {
   .footer p {
     font-family: BrandonText-Light; }
 
+blockquote {
+  border-left: none; }
+
 /*# sourceMappingURL=main.css.map */
