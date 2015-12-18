@@ -30,6 +30,7 @@
     <tr>
       <th>Name</th>
       <th>Email</th>
+      <th>Mobile</th>
       <th>Answers(From questions 2 to 9)</th>
     </tr>
     </thead>
@@ -37,6 +38,7 @@
     <tr ng-repeat="a in answers">
       <td>{{a.name}}</td>
       <td>{{a.email}}</td>
+      <td>{{a.mobile}}</td>
       <td>
         <span ng-repeat="x in a.answers track by $index">
           Q{{$index + 2}} : {{x}} <br/>
