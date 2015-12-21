@@ -40,7 +40,7 @@ angular.module('surveyApp', [])
     'blend in'
     'be in control, exude power'
     'be animated'
-    'seem natural and easygoing'
+    'Be natural and easy going'
     'make a statement'
   ]
   @q7 = [
