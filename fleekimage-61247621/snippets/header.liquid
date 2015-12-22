@@ -70,7 +70,35 @@
 
 <div class="main-header-wrapper {{ additionalClasses }}">
   <header class="main-header" role="banner">
+    <div class="branding">
+      {% if settings.use-logo %}
+        <a class="logo {% if settings.use-retina-logo %}has-retina{% endif %}" href="/">
 
+          {% assign regularLogo = 'logo.png' | asset_url %}
+          {% if fullBleedIndex and settings.home-bleed-use-logo %}
+            {% assign regularLogo = 'bleed-logo.png' | asset_url %}
+            {% elsif fullBleedProduct and settings.product-bleed-use-logo %}
+            {% assign regularLogo = 'product-bleed-logo.png' | asset_url %}
+          {% endif %}
+
+          <img class="logo-regular" alt="{{ shop.name | escape }}" src="{{ regularLogo }}" data-regular="{{ 'logo.png' | asset_url }}">
+
+          {% if settings.use-retina-logo %}
+
+            {% assign retinaLogo = 'logo-retina.png' | asset_url %}
+            {% if fullBleedIndex and settings.home-bleed-use-logo-retina %}
+              {% assign retinaLogo = 'bleed-logo-retina.png' | asset_url %}
+              {% elsif fullBleedProduct and settings.product-bleed-use-logo-retina %}
+              {% assign retinaLogo = 'product-bleed-logo-retina.png' | asset_url %}
+            {% endif %}
+
+            <img class="logo-retina" alt="{{ shop.name | escape }}" src="{{ retinaLogo }}" data-retina="{{ 'logo-retina.png' | asset_url }}">
+          {% endif %}
+        </a>
+      {% else %}
+        <h1><a href="/">{{ shop.name }}</a></h1>
+      {% endif %}
+    </div>
 
     {% if settings.header-show-search %}
       <div class="header-search-wrapper">
