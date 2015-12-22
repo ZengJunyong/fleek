@@ -26,17 +26,19 @@
       this['q' + x] = temp;
     }
     this.submit = function() {
-      var answers, email, k, mobile, name, ref1, that;
+      var answers, email, k, mobile, name, ref1, selected, that;
       this.clicked = 1;
       if ($scope.form.$valid) {
         ref1 = this.survey, name = ref1.name, mobile = ref1.mobile, email = ref1.email;
         answers = [];
-        for (x = k = 2; k <= 8; x = ++k) {
-          index = this.survey['q' + x + 'Selected'].index;
+        for (x = k = 2; k <= 9; x = ++k) {
+          selected = this.survey['q' + x + 'Selected'];
+          if (selected) {
+            index = selected.index;
+          } else {
+            index = '';
+          }
           answers.push(index);
-        }
-        if (this.survey.q9Selected) {
-          answers.push(this.survey.q9Selected.index);
         }
         that = this;
         return $http({

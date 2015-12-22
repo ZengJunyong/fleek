@@ -75,10 +75,13 @@ angular.module('surveyApp', [])
     if $scope.form.$valid
       {name,mobile,email} = @survey
       answers = []
-      for x in [2..8]
-        {index} = @survey['q' + x + 'Selected']
+      for x in [2..9]
+        selected = @survey['q' + x + 'Selected']
+        if selected
+          {index} = selected
+        else
+          index = ''
         answers.push index
-      answers.push @survey.q9Selected.index if @survey.q9Selected
       that = @
       $http({
         method: 'POST'
