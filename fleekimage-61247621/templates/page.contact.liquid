@@ -5,7 +5,10 @@
 </div>
 
 <div class="contact-form-wrapper">
-  <h3>{{ 'contact.general.header' | t }}</h3>
+  {% if form.posted_successfully? %}
+    <h3>{{ 'contact.general.header' | t }}</h3>
+  {% endif %}
+
 
   {% form 'contact' %}
 
